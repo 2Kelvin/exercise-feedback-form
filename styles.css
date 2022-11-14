@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 2em;
+    padding: 1em 3em 3em 1em;
+    border-radius: 5px;
+    border: 2px solid #219ebc;
+    outline: none;
+}
+
+button {
+    padding: 0.8em;
+    border-radius: 8px;
+    background-color: #ffb703;
+    border: none;
+}
