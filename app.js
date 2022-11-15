@@ -17,30 +17,30 @@ function FeedbackForm() {
       null,
       "Arigato!"
     );
-  } else {
-    return React.createElement(
-      "form",
-      {
-        onSubmit: function onSubmit(e) {
-          e.preventDefault();
-          alert("Sending \"" + theMessage + "\"");
-          setIsSent(true);
-        }
-      },
-      React.createElement("textarea", {
-        palceholder: "Your message here...",
-        value: theMessage,
-        onChange: function onChange(e) {
-          return setTheMessage(e.target.value);
-        }
-      }),
-      React.createElement(
-        "button",
-        { type: "submit" },
-        "Send Feedback"
-      )
-    );
   }
+
+  return React.createElement(
+    "form",
+    {
+      onSubmit: function onSubmit(e) {
+        e.preventDefault();
+        alert("Sending \"" + theMessage + "\"");
+        setIsSent(true);
+      }
+    },
+    React.createElement("textarea", {
+      palceholder: "Your message here...",
+      value: theMessage,
+      onChange: function onChange(e) {
+        return setTheMessage(e.target.value);
+      }
+    }),
+    React.createElement(
+      "button",
+      { type: "submit" },
+      "Send Feedback"
+    )
+  );
 }
 
 export default function App() {
